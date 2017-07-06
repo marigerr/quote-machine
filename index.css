@@ -1,5 +1,5 @@
 html {
-  background-color: black;
+  background-color: #C2BFBC;
   font-family: 'Zilla Slab', serif;
   height: 100%;
   width: 100%;
@@ -9,14 +9,13 @@ html {
 
 #headerTitle {
   text-align: center;
-  color: #05A7F5;
+  color: white;
 }
 
 #quote-box {
   width: 50%;
   height: 50%;
-  /*background-color: white;*/
-  background-color: #27556C;
+  background-color: white;
   margin: 0 auto;
   padding: 20px;
   border-radius: 5px;
@@ -25,7 +24,6 @@ html {
   justify-content: space-around;
   align-items: center;
   font-size: 20px;
-  /*color:white;*/
 }
 
 #author {
@@ -39,8 +37,8 @@ html {
 
 .button {
   width: 125px;
-  background-color: #05A7F5;
-  border: 2px solid #1A719B;
+  background-color: #B69274;
+  border: 2px solid #B0A28F;
   color: black;
   padding: 10px 10px;
   text-align: center;
@@ -61,7 +59,7 @@ html {
 }
 
 .button:active {
-  background-color: #801515;
+  background-color: #B69274;
   box-shadow: 0 2px #666;
   transform: translateY(4px);
 }
@@ -80,10 +78,11 @@ footer {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #27556C;
+  background-color: #22333C;
+  color:white;
   text-align: center;
   font-size: 14px;
-  font-weight: bolder;
+  /*font-weight: bolder;*/
 }
 
 @media (max-width: 768px) {
