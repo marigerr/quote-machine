@@ -36,7 +36,7 @@ html {
 }
 
 .button {
-  width: 125px;
+  width: 155px;
   background-color: #B69274;
   border: 2px solid #B0A28F;
   color: black;
@@ -68,8 +68,17 @@ html {
   outline: 0;
 }
 
+#twitterLogo {
+  width: 25px;
+  background-color: #22333C;
+  border-radius: 5px;
+  /*display: inline-block;*/
+}
+
 #tweet-quote {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 footer {
