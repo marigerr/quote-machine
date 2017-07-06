@@ -2,7 +2,17 @@
 $( document ).ready(function() {
   getNewQuote();
   $("#new-quote").on("click", getNewQuote);  
-  $("#tweet-quote").on("click", tweetQuote);
+  // $("#tweet-quote").on("click", tweetQuote);
+  console.log(find("#tweet-quote").onclick);
+
+// var elem = document.getElementById("tweet-quote");
+// var events = (jQuery._data || jQuery.data)(elem, 'events');
+// console.log(events);
+
+  // console.log(document.getElementById("tweet-quote"));
+  // jQuery( document.getElementById("tweet-quote") ).data( "events" );
+  // console.log(document.getElementById("#tweet-quote").onclick);
+      
   //$("#tweet-quote").hide();
 });
 
@@ -13,20 +23,22 @@ var getNewQuote = function(){
        if (json.quoteAuthor == "") {
         $("#author").html("Anonymous");  
        } else {
-        $("#author").html("- " + json.quoteAuthor);  
+        $("#author").html(json.quoteAuthor);
+        json.quoteAuthor.split(' ').join('_');
+        $("#author").attr("href", "https://en.wikipedia.org/wiki/" + json.quoteAuthor.split(' ').join('_'));
        }
        
-       //$("#entireHolder").html(JSON.stringify(json));
-       $("#tweet-quote").show();
+       $("#tweet-quote").attr("href", 'https://twitter.com/intent/tweet' + '?text=' + json.quoteText + ' - ' + json.quoteAuthor)
+       $("#wikiBtn").attr("href", "https://en.wikipedia.org/wiki/" + json.quoteAuthor.split(' ').join('_'));       
     });
     
 };
 
-var tweetQuote = function(){
-  var quote = $('#text').html();
-  var author = $('#author').html();
-  window.open('https://twitter.com/intent/tweet' + '?text=' + quote + ' - ' + author, '_blank');
-};
+// var tweetQuote = function(){
+//   var quote = $('#text').html();
+//   var author = $('#author').html();
+//   window.open('https://twitter.com/intent/tweet' + '?text=' + quote + ' - ' + author, '_blank');
+// };
 
 
 

@@ -7,18 +7,13 @@ html {
   padding: 0px;
 }
 
-#headerTitle {
-  text-align: center;
-  color: white;
-}
-
 #quote-box {
   width: 50%;
-  height: 50%;
+  height: 50vh;
   background-color: white;
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -27,24 +22,40 @@ html {
 }
 
 #author {
-  font-style: italic;
+  /*font-style: italic;*/
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 25px;  
 }
+
+a:link {
+  color: #22333C;
+}
+a:visited {
+  color: #22333C;
+} 
+a:hover {
+  color: #B69274;
+}  
+
+/*a:active - a link the moment it is clicked*/
 
 #buttonDiv {
   display: flex;
   flex-direction: row;
 }
 
-.button {
-  width: 155px;
+.button, #tweet-quote, #wikiBtn {
+  width: 100px;
   background-color: #B69274;
   border: 2px solid #B0A28F;
   color: black;
-  padding: 10px 10px;
+  padding: 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
+  font-family: 'Zilla Slab', serif;
+  font-size: 16px;
   font-weight: bold;
   margin: 2px 2px;
   cursor: pointer;
@@ -75,7 +86,7 @@ html {
   /*display: inline-block;*/
 }
 
-#tweet-quote {
+#tweet-quote, #wikiBtn {
   display: flex;
   align-items: center;
   justify-content: space-around;
