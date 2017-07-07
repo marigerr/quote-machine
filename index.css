@@ -40,7 +40,12 @@ a:hover {
 
 /*a:active - a link the moment it is clicked*/
 
-#buttonDiv {
+/*#buttonDiv {
+  display: flex;
+  flex-direction: row;
+}*/
+
+#linksDiv{
   display: flex;
   flex-direction: row;
 }
@@ -61,6 +66,7 @@ a:hover {
   cursor: pointer;
   border-radius: 4px;
   box-shadow: 0 5px #22333C;
+  box-sizing: border-box;
 }
 
 .button:hover {
