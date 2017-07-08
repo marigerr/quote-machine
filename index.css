@@ -64,7 +64,7 @@ a:hover {
 .button, #tweet-quote, #wikiBtn {
   width: 100px;
   height: 35px;
-  background-color: #B69274;
+  background-color:lightslategray;
   border: 2px solid #B0A28F;
   color: black;
   padding: 5px;
@@ -88,7 +88,7 @@ a:hover {
 }
 
 .button:active {
-  background-color: #B69274;
+  background-color: #22333C;
   box-shadow: 0 2px #666;
   transform: translateY(4px);
 }
@@ -99,7 +99,7 @@ a:hover {
 
 #twitterLogo {
   width: 25px;
-  background-color: #22333C;
+  background-color: #0084B4;
   border-radius: 5px;
   /*display: inline-block;*/
 }
