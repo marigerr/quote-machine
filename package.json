@@ -1,0 +1,26 @@
+{
+  "name": "quote-machine",
+  "version": "1.0.0",
+  "description": "Quote viewer with ability to tweet quote and open wikipedia to read more about the quote's author",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marigerr/quote-machine.git"
+  },
+  "author": "marigerr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marigerr/quote-machine/issues"
+  },
+  "homepage": "https://github.com/marigerr/quote-machine#readme",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2"
+  }
+}
